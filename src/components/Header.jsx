@@ -58,13 +58,13 @@ export default function Header({ cart, removeFromCart, increaseQuantity, decrese
                             <td className="fw-bold">${guitar.price}</td>
                             <td className="flex align-items-start gap-4">
                               <button type="button" className="btn btn-dark"
-							  onClick={() => decreseQuantity(guitar.id)}
+							                  onClick={() => decreseQuantity(guitar.id)}
 							  >
                                 -
                               </button>
                               {guitar.quantity}
                               <button type="button" className="btn btn-dark"
-							  	onClick={() => increaseQuantity(guitar.id)}
+							  	              onClick={() => increaseQuantity(guitar.id)}
 							  >
                                 +
                               </button>
@@ -89,7 +89,7 @@ export default function Header({ cart, removeFromCart, increaseQuantity, decrese
                 )}
 
                 <button className="btn btn-dark w-100 mt-3 p-2"
-				 onClick={() => cleanCart()}
+				            onClick={() => cleanCart()}
 				>
                   Vaciar Carrito
                 </button>
