@@ -1,7 +1,6 @@
 import { useMemo } from "react";
 
 export default function Header({ cart, removeFromCart, increaseQuantity, decreseQuantity, cleanCart }) {
-  console.log(cart);
   // State Derivado
   const isEmpty = useMemo(() => cart.length === 0, [cart]);
   const cartTotal = useMemo(
